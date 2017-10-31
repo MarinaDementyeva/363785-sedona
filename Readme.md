@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Марина Хохлова](https://up.htmlacademy.ru/htmlcss/19/user/363785).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
