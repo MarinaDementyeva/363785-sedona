@@ -1,0 +1,88 @@
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff;
+}
+.site-navigation{
+    list-style: none;
+}
+.site-navigation a {        /*покой*/   
+    color: #000000;
+}
+.site-navigation a:hover {  /*наведение*/   
+    color: #81b3d2;
+}
+.site-navigation a:active { /*нажатие*/ 
+    color: #cacaca;
+}
+.site-navigation a: { /*тут сложность( активный*/ 
+    color: #766357;
+}
+
+
+.welcome{
+    background-color: #ffffff;
+    /*здесь потом размеры указать*/ 
+}
+.visually-hidden {
+    display: none;
+}
+.img1 {
+    background-image: url "img/img1.jpg";
+}
+h2 {
+    font-size: 21px;
+    line-height: 26px;
+}
+p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+
+
+
+.blue {
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+.blue-title {
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+}
+.number,
+.comment {
+   text-align: center;
+}
+.town {
+    background-image: url(img/town.jpg);
+}
+
+
+
+
+
