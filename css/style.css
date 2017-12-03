@@ -13,10 +13,18 @@ body {
     background-color: #f2f2f2;
 }
 
+.wrapper {
+
+}
+
 a {
     text-decoration: none;
 }
-
+/*
+img {
+    max-width:100%;
+    height:auto;
+}*/
 
 
 .main-navigation {
@@ -38,38 +46,48 @@ a {
 .site-navigation a:active { /*нажатие*/ 
     color: #cacaca;
 }
-.site-navigation a: { /*тут сложность( активный*/ 
-    color: #766357;
-}
+.active {
+	pointer-events: none; /* делаем ссылку некликабельной */
+    cursor: default;  /* устанавливаем курсор в виде стрелки */
+    color: #766357; /* цвет текста для нективной ссылки */
+
 
 
 .welcome{
     background-color: #ffffff;
-    /*здесь потом размеры указать*/ 
+    background-image: url ("img/img1.jpg");
+    background-position: top center;
 }
 .visually-hidden {
     display: none;
 }
-.img1 {
-    background-image: url "img/img1.jpg";
-}
-h2 {
+
+.welcome-title {
+    margin:0;
+    padding:0;
+    text-align: center;
     font-size: 21px;
     line-height: 26px;
 }
-p {
+.welcome-five {
+    margin:0;
+    padding:0;
+    text-align: center;
     font-size: 14px;
     line-height: 26px;
 }
 
 
-
-
+.blue-town {
+    background-color: #81b3d2;
+    width: 1200px;
+    height: 258px;
+}
 .blue {
     color: #ffffff;
     background-color: #81b3d2;
 }
-.blue-title {
+.title {
     font-size: 21px;
     line-height: 21px;
     text-align: center;
@@ -79,7 +97,61 @@ p {
    text-align: center;
 }
 .town {
-    background-image: url(img/town.jpg);
+    background-image: url("img/town.jpg");
+    background-repeat:no-repeat;
+    width: 800px;
+    height: 400px;
+    background-position:;
+}
+.bridge {
+    background-image: url("img/bridge.jpg");
+    background-repeat:no-repeat;
+    width: 800px;
+    height: 400px;
+    background-position:;
+}
+}
+.grey {
+    color: #000000;
+    background-color: #eeeeee;
+}
+.feature-item1 {
+    width:75px;
+    height:72px;
+    background-image:("img/icon1.svg");
+}
+.feature-item2 {
+    width:74px;
+    height:70px;
+    background-image:url("img/icon2.svg");
+}
+.feature-item3 {
+    width:64px;
+    height:76px;
+    background-image:url("img/icon3.svg");
+}
+
+
+
+.interesting1 {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+.offer {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+.button {
+   font: inherit;
+   text-align: center;
+   border-radius: 0;
+}
+.btn-interesting {
+    
 }
 
 
