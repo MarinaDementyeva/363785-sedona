@@ -15,10 +15,10 @@
               <img src="img/logo.png" alt="Sedona" width="138" height="70">
             </a>
               <ul class="site-navigation">
-                <li class="left"><a href="#">Информация</a></li>
-                <li class="left"><a href="#">Фото и видео</a></li>
-                <li class="right"><a href="#">Карта штата</a></li>
-                <li class="right active"><a href="catalog.html">Гостиницы</a></li>
+                <li><a href="index.html">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li><a href="#" class="active">Гостиницы</a></li>
               </ul>   
           </nav>    
         </header>
@@ -63,10 +63,11 @@
          </div>
         </div>
           <div class="price">
-            <h3 class="filter-title">Стоимость в сутки (Р):</h3>
+            <h3 class="filter-title2">Стоимость в сутки (Р):</h3>
             <div class="price-filter">
               <label class="range-label" for="price-id">
-              <label class="min-price">От <input type="text" name="min-price" value="0"></label>
+              <label class="min-price">От<input type="text" name="min-price" value="0"></label>
+              <label class="max-price">До<input type="text" name="min-price" value="3000"></label>
             </div>
             <div class="range-controls">
               <div class="scale">
@@ -80,34 +81,27 @@
         </form>
       </section>
       <section class="pages">
-        <div class="sorting-container">
-          <p class="result">Найдено: 3</p>
-        <ul class="list"> 
-          <li><a href="#">Сортировка</a></li>
-          <li class="sorting-kind"><a class="sorting-type selected-sorting" href="#">По цене</a></li>
-          <li class="sorting-kind"><a class="sorting-type" href="#">По типу</a></li>
-          <li class="sorting-kind"><a class="sorting-type" href="#">По рейтингу</a></li>
+        <h3 class="found-inscription">Найдено: 3</h3>
+        <div class="sorting-wrap">
+          <span class="sorting-inscription">Сортировка:</span>
+        <ul class="sorting-range"> 
+          <li class="sorting-active">По цене</li>
+          <li><a href="type.html" class="sorting-unactive">По типу</a></li>
+          <li><a href="raiting.html" class="sorting-unactive">По рейтингу</a></li>
         </ul>
         </div>
-        <ul class="sorting-direction">
-            <a class="sorting-arrow" href="#">
-                <svg width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#cacaca" d="M5.5 0L0 10h11z"/>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="sorting-arrow selected-sorting" href="#">
-                <svg width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#cacaca" d="M5.5 10L0 0h11"/>
-                </svg>
-              </a>
-            </li>
-        </ul>
+        <div class="most-least-range">
+            <a class="most-least-sort" href="#" aria-label="Сортировка по возрастанию">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#" d="M5.5 0L0 10h11z"/></svg>
+            </a>
+            <a class="least-most-sort" href="#" aria-label="Сортировка по убыванию">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#2" d="M5.5 10L0 0h11"/></svg>
+            </a>
+          </div>
       </section>
-      <section class="catalog">
+      <section class="hotels">
           <h2 class="visually-hidden">Список гостиниц</h2>
-          <ul class="catalog-list">
+          <ul class="hotels-list">
             <li class="hotel-info amara">
               <div class="hotel-block">
                 <img class="hotel-photo" src="img/amara.jpg" alt="Фото гостиницы" width="135" height="90">
