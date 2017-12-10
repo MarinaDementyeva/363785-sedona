@@ -257,6 +257,7 @@ button {
             align-items: center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    position: relative;
     width: 33.3%;
     min-height: 329px;
     margin: 0;
@@ -536,6 +537,9 @@ button {
     margin: 0;
     padding: 40px 0;
     background-color: rgba(255,255,255,0.9);
+}
+.footer-index {
+    position:absolute;
 }
 .main-footer a {
     color: #000000;
