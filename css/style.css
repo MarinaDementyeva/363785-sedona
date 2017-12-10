@@ -281,22 +281,22 @@ button {
     text-align: center;
     font-weight: normal;
 }
-.features-item::before { 
+.feature-item::before { 
 	content: "";
-	position: absolute;
+	position: relative;
 	width: 80px;
 	height: 80px;
-	left:85px;
-	top: -100px;
+	left: 150px;
+	top: 58px;
 	background: black;
 }
-.features-item:nth-child(1):before {  
+.feature-item:nth-child(1):before {  
 	background: url(../img/icon-1.svg) no-repeat;
 }
-.features-item:nth-child(2):before {
+.feature-item:nth-child(2):before {
 	background: url(../img/icon-3.svg) no-repeat;
 }
-.features-item:nth-child(3):before {
+.feature-item:nth-child(3):before {
 	background: url(../img/icon-2.svg) no-repeat;
 }
 .bridge {
