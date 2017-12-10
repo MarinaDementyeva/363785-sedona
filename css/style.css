@@ -284,7 +284,6 @@ button {
 }
 .feature-item::before { 
 	content: "";
-	position: relative;
 	width: 80px;
 	height: 80px;
 	left: 150px;
