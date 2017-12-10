@@ -262,7 +262,7 @@ button {
     min-height: 329px;
     margin: 0;
     padding: 0;
-    padding-top: 60px;
+    padding-top: 54px;
 }
 .feature-item h2 {
     display: block;
@@ -345,8 +345,8 @@ button {
     width: 33.3%;
     min-height: 256px;
     margin: 0;
-    padding: 0;
-    padding-top: 50px;    
+    padding: 15px;
+    padding-top: 54px;    
 }
 .feature-item2 h2 {
     display: block;
