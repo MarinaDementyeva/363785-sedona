@@ -1,9 +1,27 @@
 
-
 @font-face {
-    font-family: PT-Sans; /* имя шрифта для CSS правил */
-    src: local("PT-Sans"), /* проверяем наличие шрифта в ОС пользователя */
-    url(fonts/PT-Sans.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+    font-family: 'PTSansBold';
+    src: url("../fonts/PTSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'PTSansRegular';
+    src: url("../fonts/PTSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v9/ATKpv8nLYAKUYexo8iqqrg.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v9/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
 }
 body {
     margin: 0;
@@ -68,13 +86,37 @@ button {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
     padding: 0;
-    margin: 0 72px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    list-style: none;
+    list-style-type: none;
+}
+.site-navigation li {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    padding-top: 14px;
+    padding-bottom: 16px;
+}
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+    text-align: left;
+}
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+    text-align: right;
+}
+.site-navigation li:nth-child(1) {
+    padding-left: 6%;
+}
+.site-navigation li:nth-child(4) {
+    padding-right: 6%;
+}
+.site-navigation li:nth-child(3) {
+    margin-left: auto;
 }
 .main-header-logo {
     position: absolute;
@@ -85,37 +127,19 @@ button {
     z-index: 1;
     margin-left: -69px; 
 }
-.site-navigation li {
-    width: 240px;
-    margin-top: 14px;
-    margin-bottom: 16px;
-    margin-right: 0px;
-    margin-left: 0px;
-}
-.site-navigation li:nth-child(1) 
-.site-navigation li:nth-child(2) {
-    text-align: left;
-}
-.site-navigation li:nth-child(3) {
-    text-align: right;
-    margin-left: auto;
-}
-.site-navigation li:nth-child(4) {
-    text-align: right;
-}
-.site-navigation a {        /*покой*/   
+.site-navigation a {         
     color: #000000;
 }
-.site-navigation a:hover {  /*наведение*/   
+.site-navigation a:hover {   
     color: #81b3d2;
 }
-.site-navigation a:active { /*нажатие*/ 
+.site-navigation a:active {
     color: #cacaca;
 }
 .site-navigation .active {
-	pointer-events: none; /* делаем ссылку некликабельной */
-    cursor: default;  /* устанавливаем курсор в виде стрелки */
-    color: #766357; /* цвет текста для нективной ссылки */
+	pointer-events: none; 
+    cursor: default;  
+    color: #766357; 
 }
 .container {
     display: -webkit-box;
@@ -144,26 +168,26 @@ button {
         -ms-flex-pack:justify; 
             justify-content:space-between; 
 }
-
-
-
-
 .img1 {
+    background-color: #ffffff;
     background-image: url("../img/img1.jpg");
     background-repeat: no-repeat;
-    max-width: 1200px;
+    max-width: 100%;
     height: 508px;
     background-size: cover;
     background-position: center;
 }
 .welcome-title {
-    padding: 60px 300px 51px; /*верхний, левый-правый, нижний*/
-    background-color:#ffffff;
+    min-height: 216px;
+    padding: 60px 0 0 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    line-height: 26px;
 }
 .welcome-title h2 {
-    margin:0;
-    margin-bottom:28px;
-    padding:0;
+    margin: 0 auto;
+    width: 450px;
     color:#000000;
     text-align:center;
     font-weight:700;
@@ -171,8 +195,8 @@ button {
     line-height:26px;
 }
 .welcome-title p {
-    margin:0;
-    padding:0;
+    margin:0 auto;
+    padding: 27px 20px 20px 20px;
     color:#333333;
     text-align:center;
     font-size:14px;
@@ -185,7 +209,6 @@ button {
     display: -ms-flexbox;
     display: flex;
     max-width: 1200px;
-    min-height: 256px;
     color: #ffffff;
 }
 .blue {
@@ -214,10 +237,9 @@ button {
 .town {
     background-image: url("../img/town.jpg");
     background-repeat: no-repeat;
-    width: 800px;
-    height: 256px;
+    width: 66.66%;
     background-size: cover;
-    background-position: 50% 54%;
+    background-position: center;
 }
 .white {
     display: -webkit-box;
@@ -312,10 +334,9 @@ button {
             order: -1;
     background-image: url("../img/bridge.jpg");
     background-repeat: no-repeat;
-    width: 800px;
-    height: 256px;
+    width: 66.66%;
     background-size: cover;
-    background-position:50% 54%;
+    background-position:center;
 }
 .grey {
     display: -webkit-box;
@@ -325,6 +346,7 @@ button {
     width: 100%;
     max-width: 1200px;
     height: 256px;
+    margin: 0 auto; 
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -367,6 +389,7 @@ button {
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 24px;
+    width: 75%;
     font-size: 14px;
     line-height: 21px;
     text-align: center;
