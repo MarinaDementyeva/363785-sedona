@@ -209,6 +209,7 @@ button {
     display: -ms-flexbox;
     display: flex;
     max-width: 1200px;
+    min-height: 256px;
     color: #ffffff;
 }
 .blue {
@@ -223,14 +224,14 @@ button {
 .title {
     font-size: 21px;
     line-height: 21px;
-    padding-left: 100px;
+    padding-left: 105px;
     padding-right: 100px;
 }
 .blue p {
     font-size: 14px;
     line-height: 21px; 
     font-weight: normal; 
-    margin-top: 24px;
+    margin-top: 23px;
     padding-left: 48px;
     padding-right: 48px;
 }
@@ -238,6 +239,7 @@ button {
     background-image: url("../img/town.jpg");
     background-repeat: no-repeat;
     width: 66.66%;
+   
     background-size: cover;
     background-position: center;
 }
@@ -335,6 +337,7 @@ button {
     background-image: url("../img/bridge.jpg");
     background-repeat: no-repeat;
     width: 66.66%;
+    min-height: 256px;
     background-size: cover;
     background-position:center;
 }
@@ -388,7 +391,7 @@ button {
     margin: 0;
     padding-left: 45px;
     padding-right: 45px;
-    padding-top: 24px;
+    padding-top: 22px;
     width: 75%;
     font-size: 14px;
     line-height: 21px;
@@ -421,7 +424,7 @@ button {
     position: relative;
     z-index: 2;
     width: 100%;
-    margin-top: 32px;
+    margin-top: 30px;
     padding: 34px 0;
     font-size: 21px;
     font-weight: bold;
@@ -463,6 +466,7 @@ button {
 .search-item label{
     display: block;
     width: 112px;
+    padding-left: 2px;
     font-size: 14px;
     line-height: 26px;
 }
@@ -664,7 +668,6 @@ button {
     height: 42px;
     margin: 0;
     padding: 0;
-    padding-top: 4px;
 }
 .footer-copyright a {
     margin: 0;
